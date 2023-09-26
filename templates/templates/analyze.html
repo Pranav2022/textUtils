@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzer</title>
+    <style>
+        body{
+            background-color: darkorchid;
+        }
+        p{
+            display: inline;
+            padding: 18px 20px;
+            color: blue;
+            text-align: center;
+        }
+        h1{
+            display: inline;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 3rem 0 ;
+            background-color:#ff7d73;
+        }
+        .result{
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0 ;
+            background-color:#dbdbc4;
+        }
+        pre{
+            margin: 33px 0px;
+        }
+        #originaL_TEXT{
+            margin: 0 auto;
+        }
+        li{
+            display: flex;
+    justify-content: center;
+    ALIGN-ITEMS: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your original text is : </h1><p><pre id="originaL_TEXT">{{original_text}}</pre></p>
+
+        <br>
+
+        <h1>Option selected by you : </h1>
+        <ul>
+            {% for option in purpose %}
+            <li>{{option}}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="result">
+        <h1>Your text after Analyze is : </h1><p><pre>{{analyzed_text}}</pre></p>
+    </div>
+    </body>
+</html>

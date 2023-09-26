@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter your here for Text Analyzer</h1>
+    <form action="/analyze" method="get">
+        <textarea style="width: 1327px;
+        height: 346px;" name="text" id="" cols="30" rows="10" placeholder="Enter your text here"></textarea></br>
+        <input type="checkbox" name="removepunc" id="removepunc"><p>Remove Punctuation</p><br>
+        <input type="checkbox" name="capitalizeFirst" id="capitalizeFirst"><p>capitalizeFirst</p><br>
+        <input type="checkbox" name="newLineRemover" id="newLineRemover "><p>new Line Remover </p> <br>
+        <input type="checkbox" name="spaceRemover" id="spaceRemover"><p> Space Remover</p><br>
+        <input type="checkbox" name="charCount" id="charCount"><p>Char Count</p><br>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
